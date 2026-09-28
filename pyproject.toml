@@ -7,10 +7,28 @@ authors = [
     { name = "yangjiarui", email = "yangjiarui3@faw.com.cn" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "langchain==1.4.2",
+    "langchain-openai==1.6.2",
+    "langchain-qwq==0.3.5",
+    "langgraph==1.2.11",
+    "langgraph-checkpoint-mysql[pymysql]>=3.0.0",
+    "langgraph-checkpoint-postgres>=3.1.2",
+    "numexpr==2.14.2",
+    "numpy==2.5.3",
+    "openai==3.16.2",
+    "pandas==3.0.6",
+    "psycopg[binary,pool]>=3.3.6",
+    "pydantic==2.13.5",
+    "python-dotenv==1.2.3",
+]
 
 [project.scripts]
 ailearn = "ailearn:main"
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
 
 [build-system]
 requires = ["uv_build>=0.12.13,<0.13.0"]
