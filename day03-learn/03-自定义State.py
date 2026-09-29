@@ -41,7 +41,7 @@ result1 = agent.invoke(messages, threadConfig)
 
 print(result1)
 
-result2 = agent.invoke({"messages":[HumanMessage(content="我的名字和爱好是什么")]}, threadConfig)
+result2 = agent.invoke({"messages": [HumanMessage(content="我的名字和爱好是什么")]}, threadConfig)
 
 print(result2)
 
